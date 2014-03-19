@@ -24,6 +24,10 @@ angular.module('mean').config(['$stateProvider', '$urlRouterProvider',
         url: '/articles/:articleId',
         templateUrl: 'views/articles/view.html'
     })
+      .state('all products', {
+        url: '/products',
+        templateUrl: 'js/products/productList.html'
+    })
       .state('home', {
         url: '/',
         templateUrl: 'views/index.html'
