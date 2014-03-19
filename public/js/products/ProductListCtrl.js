@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('mean.products').controller('ProductListCtrl', [ '$scope', 'Product', function ($scope, Product) {
-    console.log(Product.test);
-    $scope.productTest = Product.test;
+angular.module('etheria.products').controller('ProductListCtrl', ['$scope', 'CachedProduct', function ($scope, CachedProduct) {
+    console.log('CachedProduct.query()', CachedProduct.query());
+    $scope.products = CachedProduct.query();
+
 }]);

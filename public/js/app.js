@@ -1,8 +1,19 @@
 'use strict';
 
-angular.module('mean', ['ngCookies', 'ngResource', 'ui.bootstrap', 'ui.router', 'mean.system', 'mean.articles', 'mean.products', 'mean.products.Product']);
+angular.module('etheria',
+    ['ngCookies',
+     'ngResource',
+     'ui.bootstrap',
+     'ui.router',
+     'etheria.system',
+     'etheria.articles',
+     'etheria.products',
+     'etheria.products.Product',
+     'etheria.products.CachedProduct'
+    ]);
 
-angular.module('mean.system', []);
-angular.module('mean.articles', []);
-angular.module('mean.products', []);
-angular.module('mean.products.Product', []);
+angular.module('etheria.system', []);
+angular.module('etheria.articles', []);
+angular.module('etheria.products', []);
+angular.module('etheria.products.Product', []);
+angular.module('etheria.products.CachedProduct', []);

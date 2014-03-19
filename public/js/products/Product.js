@@ -1,8 +1,6 @@
 'use strict';
 
-angular.module('mean.products.Product').factory('Product', ['$resource',function($resource) {
-//    TODO: add resource, add caching service
-    return {
-        test:"test Product service"
-    }
+angular.module('etheria.products.Product').factory('Product', ['$resource',function($resource) {
+    var ProjectResource = $resource('/api/products/:id', {_id:"@id"});
+    return ProjectResource;
 }]);

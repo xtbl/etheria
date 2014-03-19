@@ -1,7 +1,7 @@
 'use strict';
 
 //Setting up route
-angular.module('mean').config(['$stateProvider', '$urlRouterProvider',
+angular.module('etheria').config(['$stateProvider', '$urlRouterProvider',
   function($stateProvider, $urlRouterProvider) {
     // For unmatched routes:
     $urlRouterProvider.otherwise('/');
@@ -36,7 +36,7 @@ angular.module('mean').config(['$stateProvider', '$urlRouterProvider',
 ]);
 
 //Setting HTML5 Location Mode
-angular.module('mean').config(['$locationProvider',
+angular.module('etheria').config(['$locationProvider',
   function($locationProvider) {
     $locationProvider.hashPrefix('!');
 }

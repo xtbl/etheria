@@ -3,5 +3,5 @@
 var products = require('../controllers/products');
 
 module.exports = function(app) {
-    app.get('/products', products.all);
+    app.get('/api/products', products.all);
 };
