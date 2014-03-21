@@ -1,25 +1,12 @@
 <div class="container" data-ng-controller="ProductListCtrl">
     <h1>Product List</h1>
     <div test-directive></div>
-    <div masonry>
+    <!--fix overlapping-->
+    <!--http://masonry.desandro.com/faq.html-->
+    <div masonry preserve-order>
         <div class="masonry-brick" ng-repeat="product in products" >
             <img ng-src="{{ product.image }}" alt="Product">
             <p>{{ product.name }}</p>
         </div>
     </div>
-    <!--<div class="row">-->
-        <!--<div class="col-xs-3" ng-repeat="product in products" >-->
-            <!--<a href="{{ product.url }}">-->
-                <!--<img ng-src="{{ product.image }}" class="img-rounded" alt="Product">-->
-                <!--<p>{{ product.name }}</p>-->
-            <!--</a>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <!--<div ng-repeat="product in products" >-->
-        <!--<p>{{ product.name }}</p>-->
-        <!--<p>{{ product.image }}</p>-->
-        <!--<p>{{ product.price }}</p>-->
-        <!--<p>{{ product.description }}</p>-->
-    <!--</div>-->
 </div>

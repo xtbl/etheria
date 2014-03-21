@@ -15,7 +15,7 @@ angular.module('etheria',
 
 angular.module('etheria.system', []);
 angular.module('etheria.articles', []);
-angular.module('etheria.products', ['wu.masonry']);
+angular.module('etheria.products', []);
 angular.module('etheria.products.Product', []);
 angular.module('etheria.products.CachedProduct', []);
 //angular.module('wu.masonry', []);
