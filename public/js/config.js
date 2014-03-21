@@ -33,7 +33,18 @@ angular.module('etheria').config(['$stateProvider', '$urlRouterProvider',
         templateUrl: 'views/index.html'
     });
 }
-]);
+])
+
+.run(function($rootScope){
+    $rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
+        console.log("State Change: State change success!");
+        console.log("From: ", fromState);
+        console.log("To: ", toState);
+    });
+
+
+})
+;
 
 //Setting HTML5 Location Mode
 angular.module('etheria').config(['$locationProvider',

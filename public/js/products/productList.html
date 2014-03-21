@@ -1,9 +1,11 @@
 <div class="container" data-ng-controller="ProductListCtrl">
     <h1>Product List</h1>
     <div test-directive></div>
+    <button class="btn-danger" ng-click="removeGalleryItems()">Remove</button>
+    <button class="btn-default" ng-click="createGalleryItems()">Create</button>
     <!--fix overlapping-->
     <!--http://masonry.desandro.com/faq.html-->
-    <div masonry preserve-order>
+    <div masonry masonry="{ transitionDuration: '1s' }">
         <div class="masonry-brick" ng-repeat="product in products" >
             <img ng-src="{{ product.image }}" alt="Product">
             <p>{{ product.name }}</p>

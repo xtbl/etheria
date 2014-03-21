@@ -18,4 +18,3 @@ angular.module('etheria.articles', []);
 angular.module('etheria.products', []);
 angular.module('etheria.products.Product', []);
 angular.module('etheria.products.CachedProduct', []);
-//angular.module('wu.masonry', []);

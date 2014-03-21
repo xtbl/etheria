@@ -2,9 +2,16 @@
 	<div class="title-container">
         <h1 class="main-title">ETHERIA</h1>
     </div>
+    <div masonry masonry="{ transitionDuration: '1s' }">
+        <div class="masonry-brick" ng-repeat="product in products" >
+            <img ng-src="{{ product.image }}" alt="Product">
+            <h3 class="light-title">{{ product.name }}</h3>
+            <p class="contrast-text">{{ product.description }}</p>
+        </div>
+    </div>
     <video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
         <source src="video/cloud_loop.mp4" type="video/mp4"/>
     </video>
 </section>
 
-<span style="opacity: .9"<div id="video_pattern" ></div></span>
+<span style="opacity: .5"<div id="video_pattern" ></div></span>
